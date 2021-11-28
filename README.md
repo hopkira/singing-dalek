@@ -23,7 +23,7 @@ Import and use the module as per the module-test.py file:
 The program expects to read data from a four column CSV file. Each row in the CSV file corresponds to  a note/pause and/or a syllable.
 
 The format of each column is as follows:
-|Column 1|Column 2|Column 3| Column 4
+|Column 1 - note|Column 2 - duration|Column 3 - word| Column 4 - emphasis
 |---|---|---|---|
 Mandatory: A note from A to G. Optionally prefix with a '+' for every octave above middle C or '-' for each octave below e.g. ++A, C, -G.  Alternatively can be a 'P' to indicate a pause|Mandatory: the duration of the note or pause in terms of beats e.g. 0.5, 1, 1.5, 2 - will be treated as a float|Optional: the syllable or word sung on that note|Optional: using a > will raise the volume of that note and using a < will lower it.
 
