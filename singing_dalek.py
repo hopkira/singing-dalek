@@ -53,7 +53,7 @@ def sing(filename):
                 time.sleep(float(duration)/4.0)
             else:
                 sox_pitch = note_to_cents(note) # adjust pitch
-                speed = 100 +  (75 * float(duration)) # adjust speed
+                speed = 175/float(duration) # adjust speed
             cmd = "espeak -v en-rp '%s' -p %s -s %s -a %s -z --stdout|play -v %s - synth sine fmod 25 pitch %s" % (syllable, pitch, speed, amplitude, sox_vol, sox_pitch)
             os.system(cmd)
 
